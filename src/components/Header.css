@@ -1,4 +1,10 @@
 .header {
-    background-color: blanchedalmond;
-    grid-column: 1;
+    border: 1px solid black;
+    grid-column: 1; /* ocupar a primeira coluna do grid */
+}
+
+.header img {
+    width: 100%; /* tamanho proporcional ao tamanho da página */
+    height: 100%; /* tamanho proporcional ao tamanho da página */
+    display: block; /* garantir que o logotipo ocupe todo o espaço disponível */
 }
