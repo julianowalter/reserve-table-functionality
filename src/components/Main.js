@@ -1,8 +1,8 @@
 function Main() {
     return(
-        <div>
+        <main>
             Main
-        </div>
+        </main>
     )
 }
 

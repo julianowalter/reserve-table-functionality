@@ -1,10 +1,31 @@
 import Logo from '../assets/Logo.svg'
 import './Header.css'
+import { useRef } from 'react';
 
 function Header() {
+    const hamburgerRef = useRef(null);
+    const navMenuRef = useRef(null);
+
+    const toggleMenu = () => {
+    hamburgerRef.current.classList.toggle('active');
+    navMenuRef.current.classList.toggle('active');
+  };
+
     return (
-        <header className='header'>
-            <img src={Logo} alt='company logo'/>
+        <header>
+            <nav className='navbar'>
+                <img src={Logo} alt='company logo' className='logo'/>
+                <ul className='nav-menu' ref={navMenuRef}>
+                    <li className='nav-item'><a href='#' className='nav-link'>Home</a></li>
+                    <li className='nav-item'><a href='#' className='nav-link'>Sobre</a></li>
+                    <li className='nav-item'><a href='#' className='nav-link'>Contato</a></li>
+                </ul>
+                <div className='hamburger' ref={hamburgerRef} onClick={toggleMenu}>
+                    <span className='bar'></span>
+                    <span className='bar'></span>
+                    <span className='bar'></span>
+                </div>
+            </nav>
         </header>
     )
 }

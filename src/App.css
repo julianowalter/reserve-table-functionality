@@ -1,4 +1,0 @@
-.header-container {
-  display: grid; /* cor para visualização */
-  grid-template-columns: 1fr 4fr; /* criar um grid com 2 colunas e diferentes tamanhos */
-}
