@@ -14,7 +14,7 @@ function Header() {
 
     return (
         <header>
-            <nav className='navbar'>
+            <nav className='container grid navbar'>
                 <img src={Logo} alt='company logo' className='logo' />
                 <ul className='nav-menu' ref={navMenuRef}>
                     <li className='nav-item'><a href='/' className='nav-link'><Link to="/">Home</Link></a></li>

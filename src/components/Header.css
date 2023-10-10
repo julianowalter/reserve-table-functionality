@@ -1,11 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+header {
+    background-color:#FFF;
 }
 
-header {
-    background-color:#816868;
+.logo {
+    align-self: center;
 }
 
 li {
@@ -13,8 +11,9 @@ li {
 }
 
 a {
-    color: #FFF;
+    color: #495E57;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .navbar {
@@ -28,7 +27,7 @@ a {
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 20px;
 }
 
 .nav-link {
@@ -50,11 +49,11 @@ a {
     height: 3px;
     border-radius: 2px;
     margin: 5px auto;
-    background-color: chartreuse;
+    background-color: #495E57;
     transition: all 0.3s ease-in-out;
 }
 
-@media (max-width:925px) {
+@media (max-width:792px) {
     .hamburger{
         display: block;
     }
@@ -73,7 +72,7 @@ a {
         top: 70px;
         gap: 0;
         border-radius: 0 0 20px 20px;
-        background-color: black;
+        background-color: #FFF;
         text-align: center;
         flex-direction: column;
         width: 100%;
