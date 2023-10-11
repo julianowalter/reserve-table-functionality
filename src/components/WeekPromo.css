@@ -1,0 +1,43 @@
+.week-promo {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+}
+
+.week-promo-header {
+    grid-column: 1/4;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 2rem;
+}
+
+.week-promo-header h2 {
+    line-height: 1;
+    font-family: "Marzazi Text";
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 960px) {
+    .week-promo {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .week-promo-header {
+        grid-column: 1 / 3;
+    }
+}
+
+@media (max-width: 692px) {
+    .week-promo {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .week-promo-header {
+        grid-column: 1 / 2;
+    }
+}
