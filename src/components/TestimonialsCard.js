@@ -1,12 +1,25 @@
 import '../components/TestimonialsCard.css';
+import {
+    faStar,
+    faStarHalfStroke
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const TestimonialsCard = ({customer}) => {
-    return(
+const ratingLevels = { '0.5': faStarHalfStroke, '1': faStar, };
+
+const TestimonialsCard = ({ customer }) => {
+    return (
         <article className='testimonial-card'>
             <img src={customer.image} alt={customer.fullName} />
             <h4>{customer.fullName}</h4>
             <span>
-                {customer.rating}
+                {customer.rating.map((ratingPoint, index) =>
+                    <FontAwesomeIcon
+                        key={index}
+                        icon={ratingLevels[ratingPoint]}
+                        size='xs'
+                    />
+                )}
             </span>
             <blockquote><p>"{customer.says}"</p></blockquote>
         </article>

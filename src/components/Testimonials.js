@@ -10,28 +10,28 @@ const customers = [
         fullName: 'Maria Sanchez',
         image: customerImg1,
         rating: [1, 1, 1, 1, 0.5],
-        says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+        says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
     },
     {
         fullName: 'Antony Clifton',
         image: customerImg2,
         rating: [1, 1, 1, 1, 1],
-        says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+        says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
     },
     {
         fullName: 'Tamika Jackson',
         image: customerImg3,
         rating: [1, 1, 1, 1, 0.5],
-        says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+        says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
     },
     {
         fullName: 'Brandon Ming',
         image: customerImg4,
         rating: [1, 1, 1, 1],
-        says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+        says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
     },
 ];
